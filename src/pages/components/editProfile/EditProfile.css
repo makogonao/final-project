@@ -1,0 +1,147 @@
+.edit-profile-container {
+    width: 100%;
+    height: 100%;
+}
+
+.edit-user-item-form {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;  
+    width: 60%;
+    border-bottom: 2px solid #404040;
+    padding: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.edit-user-item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;  
+    width: 100%;
+}
+
+.save-user-changes-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.save-user-changes-btn-container button {
+    box-sizing: border-box;
+    background-color: #363636;
+    color: #636363;
+    outline: none;
+    cursor: pointer;
+    height: 40px;
+    width: 70%;
+    font-size: 18px;
+    border-radius: 25px;
+    border: 2px solid #636363;
+}
+
+.save-user-changes-btn-container button:hover {
+    background-color: #81c441;
+    color: #285200;
+    border: 2px solid #81c441;
+}
+
+.save-user-changes-btn-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.edit-user-parameter {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    max-width: 230px;
+}
+
+.edit-user-item-input-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #cacaca;
+    width: 70%;
+    border-radius: 20px;
+    color: #363636;
+}
+
+.edit-user-item-input-container input, select{
+    box-sizing: content-box;
+    padding: 0;
+    height: 100%;
+    color: #363636;
+    font-weight: 800;
+    background-color: #cacaca;
+    font-size: 13.333px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    width: Calc(100% - 20px);
+    height: 30px;
+    border-radius: 15px;
+    font-family: Nunito;
+    font-size: inherit;
+}
+
+.date-picker {
+    box-sizing: content-box;
+    padding: 0;
+    height: 100%;
+    color: #363636;
+    font-weight: 800;
+    background-color: #cacaca;
+    font-size: 13.333px;
+    outline: none;
+    border: none !important;
+    width: Calc(100% - 20px);
+    height: 30px;
+    border-radius: 15px;
+    font-family: Nunito;
+    font-size: inherit;
+
+}
+
+.edit-user-item-input-container select{
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0;
+}
+
+::-webkit-datetime-edit-text {
+    font-family: Nunito;
+    font-size: 13,333px;
+    color: #363636;
+}
+::-webkit-datetime-edit-month-field {
+    font-family: Nunito;
+    font-size: 13,333px;
+    color: #363636; 
+}
+::-webkit-datetime-edit-day-field {
+    font-family: Nunito;
+    font-size: 13,333px;
+    color: #363636; 
+}
+::-webkit-datetime-edit-year-field {
+    font-family: Nunito;
+    font-size: 13,333px;
+    color: #363636; 
+}
+::-webkit-inner-spin-button {
+    display: block; 
+}
+::-webkit-calendar-picker-indicator { 
+    padding-right: 20px;
+    font-size: 16px;
+    color: #363636;
+}
