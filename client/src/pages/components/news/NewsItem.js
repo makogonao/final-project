@@ -11,6 +11,7 @@ export default class NewsItem extends Component {
         isEdit: false,
         post_theme: this.props.post_theme,
         post_text: this.props.post_text,
+        post_date: Date(),
         showAlltext:false,
         user: [],
     }
@@ -37,7 +38,7 @@ export default class NewsItem extends Component {
         });
     };
     saveNew = () => {
-        editNewByID(this.props.id, localStorage.getItem("token"), dayjs(this.props.post_date).format("YYYY-MM-DD mm:HH:ss"), this.state.post_theme, this.state.post_text)
+        editNewByID(this.props.id, localStorage.getItem("token"), dayjs(this.props.post_date).format("YYYY-MM-DD HH:mm:ss"), this.state.post_theme, this.state.post_text)
         .then((body) => {
             console.log(body.values)
             this.props.updateNewsList()

@@ -10,7 +10,7 @@ export default class HeaderComponent extends Component {
         return (
             <div className="headers">
                 <LogoComponent/>                
-                <FindComponent changeFindString={(event) => this.props.changeFindString(event)}/>
+                <FindComponent changeFindString={(value) => this.props.changeFindString(value)}/>
                 <UserComponent changeUserStatus={this.props.changeUserStatus} user={this.props.user}/>                
             </div>
         )

@@ -23,9 +23,9 @@ export default class MainPage extends Component {
         findString: "",
     };
 
-    changeFindString = (event) => {
+    changeFindString = (value) => {
         this.setState({
-            findString: event.target.value,
+            findString: value,
         }, () => console.log(this.state.findString))
     }
 

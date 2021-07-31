@@ -1,4 +1,4 @@
-const URL = "http://192.168.1.200:3500/"
+const URL = "/"
 
 export async function registerUser(email, userName, userSurname, password) {
     const response = await fetch(`${URL}api/auth/signup`, 
